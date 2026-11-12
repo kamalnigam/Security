@@ -1,0 +1,9 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="1200" height="480" viewBox="0 0 1200 480" role="img" aria-labelledby="title desc">
+  <title id="title">OAuth 2.0 and OpenID Connect</title>
+  <desc id="desc">OAuth 2.0 provides delegated authorization. OpenID Connect adds authentication and the ID Token.</desc>
+  <rect width="1200" height="480" rx="24" fill="#f8fafc"/>
+  <text x="600" y="55" text-anchor="middle" font-family="Arial, sans-serif" font-size="28" font-weight="700" fill="#0f172a">OAuth 2.0 and OpenID Connect solve different questions</text>
+  <g font-family="Arial, sans-serif" text-anchor="middle"><rect x="80" y="110" width="480" height="275" rx="20" fill="#dbeafe" stroke="#2563eb" stroke-width="3"/><text x="320" y="160" font-size="27" font-weight="700" fill="#1e3a8a">OAuth 2.0</text><text x="320" y="210" font-size="22" fill="#1e3a8a">Authorization</text><text x="320" y="250" font-size="18" fill="#1e3a8a">“May this client call this API?”</text><text x="320" y="310" font-size="17" fill="#1e3a8a">Access token • scopes • audience</text><rect x="640" y="110" width="480" height="275" rx="20" fill="#dcfce7" stroke="#15803d" stroke-width="3"/><text x="880" y="160" font-size="27" font-weight="700" fill="#166534">OpenID Connect</text><text x="880" y="210" font-size="22" fill="#166534">Authentication + identity</text><text x="880" y="250" font-size="18" fill="#166534">“Who authenticated for this client?”</text><text x="880" y="310" font-size="17" fill="#166534">ID Token • UserInfo • discovery</text></g>
+  <path d="M640 200 C600 200 600 150 560 150" stroke="#0f766e" fill="none" stroke-width="3"/>
+  <text x="600" y="420" text-anchor="middle" font-family="Arial, sans-serif" font-size="17" fill="#334155">OIDC is an identity layer built on top of OAuth 2.0. An ID Token is not an API access token.</text>
+</svg>

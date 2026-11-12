@@ -1,0 +1,19 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="1200" height="560" viewBox="0 0 1200 560" role="img" aria-labelledby="title desc">
+  <title id="title">OAuth grant-selection guide</title>
+  <desc id="desc">A decision diagram choosing authorization code with PKCE for users, client credentials for workload identity, and device authorization for constrained devices.</desc>
+  <defs><marker id="a" markerWidth="10" markerHeight="10" refX="9" refY="3" orient="auto"><path d="M0,0 L0,6 L9,3 z" fill="#334155"/></marker></defs>
+  <rect width="1200" height="560" rx="24" fill="#f8fafc"/>
+  <text x="600" y="52" text-anchor="middle" font-family="Arial, sans-serif" font-size="28" font-weight="700" fill="#0f172a">OAuth 2.0 grant selection</text>
+  <g font-family="Arial, sans-serif" text-anchor="middle">
+    <rect x="440" y="85" width="320" height="72" rx="14" fill="#dbeafe" stroke="#2563eb" stroke-width="3"/><text x="600" y="128" font-size="20" font-weight="700" fill="#1e3a8a">Is a user delegating access?</text>
+    <path d="M600 157 V215 M600 215 H290 V250 M600 215 H900 V250" fill="none" stroke="#334155" stroke-width="3" marker-end="url(#a)"/>
+    <text x="420" y="207" font-size="16" fill="#475569">Yes</text><text x="780" y="207" font-size="16" fill="#475569">No</text>
+    <rect x="100" y="250" width="380" height="105" rx="14" fill="#dcfce7" stroke="#15803d" stroke-width="3"/><text x="290" y="290" font-size="21" font-weight="700" fill="#166534">Authorization Code + PKCE</text><text x="290" y="322" font-size="15" fill="#166534">Web, SPA, mobile, native applications</text>
+    <rect x="720" y="250" width="360" height="105" rx="14" fill="#fef3c7" stroke="#b45309" stroke-width="3"/><text x="900" y="290" font-size="21" font-weight="700" fill="#92400e">Client Credentials</text><text x="900" y="322" font-size="15" fill="#92400e">Service-to-service or batch workload</text>
+    <path d="M290 355 V410 M290 410 H155 V445 M290 410 H430 V445" fill="none" stroke="#334155" stroke-width="3" marker-end="url(#a)"/>
+    <text x="155" y="397" font-size="15" fill="#475569">Constrained device?</text><text x="430" y="397" font-size="15" fill="#475569">Normal user client</text>
+    <rect x="45" y="445" width="220" height="68" rx="14" fill="#f3e8ff" stroke="#7e22ce" stroke-width="3"/><text x="155" y="474" font-size="18" font-weight="700" fill="#6b21a8">Device Authorization</text><text x="155" y="496" font-size="13" fill="#6b21a8">TV, CLI, IoT</text>
+    <rect x="320" y="445" width="220" height="68" rx="14" fill="#dbeafe" stroke="#2563eb" stroke-width="3"/><text x="430" y="474" font-size="18" font-weight="700" fill="#1e3a8a">Code + PKCE</text><text x="430" y="496" font-size="13" fill="#1e3a8a">Redirect-based user login</text>
+  </g>
+  <text x="900" y="440" text-anchor="middle" font-family="Arial, sans-serif" font-size="16" fill="#7c2d12">Avoid for new systems: Implicit and password (ROPC) grants</text>
+</svg>
